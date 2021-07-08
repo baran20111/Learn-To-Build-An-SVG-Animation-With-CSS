@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{ 
+    text-align: center;
+}
+#back-wheel{
+animation: wheel 2s linear infinite;
+transform-origin: center;
+transform-box: fill-box;
+}
+#front-wheel{
+    animation: wheel 2s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+    }
+@keyframes wheel {
+    from{
+transform:rotatez(0deg);
+    }
+    to{
+        transform:rotatez(360deg);
+
+    }
+}
+
+#man-bike{
+animation:bike 1s ease-in-out infinite alternate;
+transform-origin: bottom;
+}
+@keyframes bike {
+    from{
+transform:rotateX(0deg)
+    }
+    to{
+transform:rotateX(20deg)
+    }
+}
